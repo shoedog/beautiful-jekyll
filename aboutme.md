@@ -47,24 +47,24 @@ Spark operates in three modes: single mode which is standalone on a single machi
 * _ResourceManager_:  YARN daemon that assigns the ApplicationMaster for an application and keeps track of available resources on the NodeManagers.
 * _ApplicationsMaster_:  A delegate process for managing the execution and status of an application. It determines required container resources for an application and negotiates for these with the ResourceManager.
 * _containers_:  Compute and memory resources presented to applications to perform tasks.
- <dl>
-                        <dt>NameManagers</dt>
-                        <dd>Worker daemons, processes, or agents that carry out tasks</dd>
-                        <dt>tasks</dt>
-                        <dd>An individual unit of work such as a Map task. Each task has at least one task attempt.
-                        Tasks can be attempted more than once due to failure, or due to speculative execution..
-                        With speculative execution, a task that is running slower relative to other concurrent tasks is started
-                         on another NodeManager and the result of the first completed task is used.</dd>
-                        <dt>application</dt>
-                        <dd>A complete set of tasks.</dd>
-                        <dt>ResourceManager</dt>
-                        <dd>YARN daemon that assigns the ApplicationMaster for an application and keeps track of available
-                         resources on the NodeManagers.</dd>
-                        <dt>ApplicationsMaster</dt>
-                        <dd>A delegate process for managing the execution and status of an application. It determines required
-                        container resources for an application and negotiates for these with the ResourceManager.</dd>
-                        <dt>containers</dt>
-                        <dd>Compute and memory resources presented to applications to perform tasks.</dd>
-                    </dl>
+<dl>
+<dt>NameManagers</dt>
+<dd>Worker daemons, processes, or agents that carry out tasks</dd>
+<dt>tasks</dt>
+<dd>An individual unit of work such as a Map task. Each task has at least one task attempt.
+Tasks can be attempted more than once due to failure, or due to speculative execution..
+With speculative execution, a task that is running slower relative to other concurrent tasks is started
+ on another NodeManager and the result of the first completed task is used.</dd>
+<dt>application</dt>
+<dd>A complete set of tasks.</dd>
+<dt>ResourceManager</dt>
+<dd>YARN daemon that assigns the ApplicationMaster for an application and keeps track of available
+ resources on the NodeManagers.</dd>
+<dt>ApplicationsMaster</dt>
+<dd>A delegate process for managing the execution and status of an application. It determines required
+container resources for an application and negotiates for these with the ResourceManager.</dd>
+<dt>containers</dt>
+<dd>Compute and memory resources presented to applications to perform tasks.</dd>
+</dl>
 
 
