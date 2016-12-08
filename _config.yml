@@ -23,7 +23,7 @@ description: An Introduction to Apache Spark
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
+  Overview: "overview"
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
