@@ -25,7 +25,9 @@ Spark operates in three modes: single mode which is standalone on a single machi
 * **_Spark Mlib_**:  Algorithms and a framework for machine learning
 * **_Spark Streaming_**:  Near real-time processing and analysis on streams of data
 * **_Spark GraphX_**:  Processing and computation on connected entities and relationships.  
-
+  
+  
+  
 ### Hadoop for Spark: HDFS and YARN  
 
 #### HDFS  
