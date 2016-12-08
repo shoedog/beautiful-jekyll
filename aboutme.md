@@ -21,10 +21,10 @@ Spark is usually used to process data in Hadoop, but can be used with local and 
 
 Spark operates in three modes: single mode which is standalone on a single machine, distributed on YARN, or distributed on Mesos which is a cluster manager developed with Spark at Berkeley. Spark includes the following libraries:  
 
-* _Spark SQL_:  SQL like queries to explore large structured datasets
-* Spark Mlib:  Algorithms and a framework for machine learning
-* _Spark Streaming_:  Near real-time processing and analysis on streams of data
-* _Spark GraphX_:  Processing and computation on connected entities and relationships.  
+* **_Spark SQL_**:  SQL like queries to explore large structured datasets
+* **_Spark Mlib_**:  Algorithms and a framework for machine learning
+* **_Spark Streaming_**:  Near real-time processing and analysis on streams of data
+* **_Spark GraphX_**:  Processing and computation on connected entities and relationships.  
 
 ### Hadoop for Spark: HDFS and YARN  
 
