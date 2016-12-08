@@ -30,41 +30,31 @@ Spark operates in three modes: single mode which is standalone on a single machi
   
 ### Hadoop for Spark: HDFS and YARN  
 
+
 #### HDFS  
- HDFS is a distributed, fault-tolerant, scalable, high-concurrency supporting, virtual file-system. HDFS maintains an immutability property for data, meaning that data is unable to be updated after it is committed to the filesystem.  
+
+HDFS is a distributed, fault-tolerant, scalable, high-concurrency supporting, virtual file-system. HDFS maintains an immutability property for data, meaning that data is unable to be updated after it is committed to the filesystem.  
 
  Files consist of blocks which default to 128MB, but are configurable to other sizes. Upon input to HDFS, files are divided into blocks, distrubuted, and replicated. A 400MB file will be divided into 3 blocks of 128MB and a block of 50MB. If a Hadoop cluster contains multiple nodes, blocks are distributed among slave nodes without being shared. Blocks are replicated according to a defined replication factor which is usually set to 3 when there are 3 or more nodes.  
 
-* _NameNode_:  The NameNode is the master server that manages file system namespace and regulates access to files by clients. It handles namespace file operations like opening, closing, and renaming files and directors, and determines mapping of blocks to DataNodes.
-* _DataNodes_:  DataNodes manage storage attached to the nodes that the cluster runs on, serve read and write requests from clients, manage local storage, provide block reports to the NameNode, and perform block creation, deletion, and replication based on instructions from the NameNode.  
+* _NameNode_:  
+ The NameNode is the master server that manages file system namespace and regulates access to files by clients. It handles namespace file operations like opening, closing, and renaming files and directors, and determines mapping of blocks to DataNodes.
+* _DataNodes_:  
+ DataNodes manage storage attached to the nodes that the cluster runs on, serve read and write requests from clients, manage local storage, provide block reports to the NameNode, and perform block creation, deletion, and replication based on instructions from the NameNode.  
+
 
 #### YARN  
- YARN schedules and orchestrates applications, jobs, and tasks in Hadoop.
 
-* _NameManagers_:  Worker daemons, processes, or agents that carry out tasks
-* _tasks_:  An individual unit of work such as a Map task. Each task has at least one task attempt. Tasks can be attempted more than once due to failure, or due to speculative execution. With speculative execution, a task that is running slower relative to other concurrent tasks is started on another NodeManager and the result of the first completed task is used.
+YARN schedules and orchestrates applications, jobs, and tasks in Hadoop.
+
+* _NameManagers_:  
+ Worker daemons, processes, or agents that carry out tasks
+* _tasks_:  
+ An individual unit of work such as a Map task. Each task has at least one task attempt. Tasks can be attempted more than once due to failure, or due to speculative execution. With speculative execution, a task that is running slower relative to other concurrent tasks is started on another NodeManager and the result of the first completed task is used.
 * _application_:  A complete set of tasks.
 * _ResourceManager_:  YARN daemon that assigns the ApplicationMaster for an application and keeps track of available resources on the NodeManagers.
 * _ApplicationsMaster_:  A delegate process for managing the execution and status of an application. It determines required container resources for an application and negotiates for these with the ResourceManager.
 * _containers_:  Compute and memory resources presented to applications to perform tasks.
-<dl>
-<dt>NameManagers</dt>
-<dd>Worker daemons, processes, or agents that carry out tasks</dd>
-<dt>tasks</dt>
-<dd>An individual unit of work such as a Map task. Each task has at least one task attempt.
-Tasks can be attempted more than once due to failure, or due to speculative execution..
-With speculative execution, a task that is running slower relative to other concurrent tasks is started
- on another NodeManager and the result of the first completed task is used.</dd>
-<dt>application</dt>
-<dd>A complete set of tasks.</dd>
-<dt>ResourceManager</dt>
-<dd>YARN daemon that assigns the ApplicationMaster for an application and keeps track of available
- resources on the NodeManagers.</dd>
-<dt>ApplicationsMaster</dt>
-<dd>A delegate process for managing the execution and status of an application. It determines required
-container resources for an application and negotiates for these with the ResourceManager.</dd>
-<dt>containers</dt>
-<dd>Compute and memory resources presented to applications to perform tasks.</dd>
-</dl>
+
 
 
