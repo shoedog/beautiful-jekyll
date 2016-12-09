@@ -24,23 +24,27 @@ description: An Introduction to Apache Spark
 # List of links in the navigation bar
 navbar-links:
   Overview: "overview"
-  Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
-  Author's home: "http://deanattali.com"
+  Setup & SparkShell:
+    - Setup: "setup"
+    - Spark Shell Basics: "sparkshell"
+    - Spark RDD: "rdd"
+  Concepts in Python Drivers:
+    - Setting up a Python Driver: "python_driver"
+    - Spark Closures: "spark_closures"
+    - Tooling with IPython and Jupyter: "jupyter_ipython"
+  Sample Application: "sample"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+#avatar: "/img/spark-code.png"
 
 # --- Footer options --- #
 
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Some Person
-  email: "youremail@domain.com"
+  name: Wesley Jinks
+#  email: "youremail@domain.com"
 #  facebook: yourname  # eg. daattali
 #  github: yourname    # eg. daattali
 #  twitter: yourname   # eg. daattali
